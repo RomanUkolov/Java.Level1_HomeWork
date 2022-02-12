@@ -12,6 +12,7 @@ class HomeWork_2 {
         PositiveOrNegative (-10);
         boolean res2 = NegativeNumber (-5);
         System.out.println("Result - " + res2);
+        RepeatWord ("Hello", 3);
     }
     
     static boolean CheckNumberSum (int a, int b) {
@@ -24,5 +25,11 @@ class HomeWork_2 {
     
     static boolean NegativeNumber (int i) {
         return i <= 0;
+    }
+    
+    static void RepeatWord (String text, int times) {
+        for (int i = 0; i < times; i++) {
+            System.out.println(text);
+        }
     }
 }
