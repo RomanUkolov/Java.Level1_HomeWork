@@ -8,8 +8,10 @@
 class HomeWork_2 {
     public static void main (String[] args) {
         boolean result = CheckNumberSum (11, 8);
-        System.out.println(result);
+        System.out.println("Check - " + result);
         PositiveOrNegative (-10);
+        boolean res2 = NegativeNumber (-5);
+        System.out.println("Result - " + res2);
     }
     
     static boolean CheckNumberSum (int a, int b) {
@@ -18,5 +20,9 @@ class HomeWork_2 {
     
     static void PositiveOrNegative ( int i) {
         System.out.println(i >= 0? "Number is positive" : "Number is negative");
+    }
+    
+    static boolean NegativeNumber (int i) {
+        return i <= 0;
     }
 }
