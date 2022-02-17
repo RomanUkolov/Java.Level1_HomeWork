@@ -14,8 +14,8 @@ class HomeWork_3 {
         emptyArray();
         upgradeArray();
         squarArray();
-        int [] mas = inputReturnArray(4, 3);
-        System.out.println(Arrays.toString(mas));
+        int[] arrData = returnArray(15, 5);
+        System.out.println(Arrays.toString(arrData));
     }
     
     static void reverseArray() {
@@ -46,7 +46,6 @@ class HomeWork_3 {
         }
         System.out.println(Arrays.toString(arr));
         System.out.println();
-        inputReturnArray();
     }
     
     static void squarArray() {
@@ -63,7 +62,7 @@ class HomeWork_3 {
         System.out.println();
     }
     
-    static int[] inputReturnArray(int len, int initialValue) {
+    static int[] returnArray(int len, int initialValue) {
         int[] arr = new int [len];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = initialValue;
